@@ -41,6 +41,11 @@ public class Account_KK
 		int x = sc.nextInt();
 		System.out.println("Enter the amount:");
 		int a = sc.nextInt();
+		if(a > balance) 
+		{
+			System.out.println("Exception: Withdrawl Not Possible");
+			
+		}
 		if(x == 1)
 		{
 			System.out.println("Remaining Balance: " + (balance - a));	
